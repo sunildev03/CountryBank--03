@@ -8,7 +8,8 @@ services:
       - 8000:8000
     environment: 
       CONFIG_MAIL_HOST="smpt.gmail.com"
-      CONFIG_MAIL_PORT="587" export CONFIG_MAIL_SMTP_AUTH="true" 
+      CONFIG_MAIL_PORT="587" 
+      CONFIG_MAIL_SMTP_AUTH="true" 
       CONFIG_MAIL_STARTTLS="true"
       CONFIG_MAIL_USERNAME="kinnerasunildev@gmail.com" 
       CONFIG_MAIL_PASSWORD="KINNERA03#"
