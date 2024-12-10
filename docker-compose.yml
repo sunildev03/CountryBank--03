@@ -1,7 +1,6 @@
-version: "2"
 services:
   countrybank:
-    image: nikitap/countrybank
+    image: sunil03/countrybank
     container_name: countrybank
     ports:
       - "8000:8000"
