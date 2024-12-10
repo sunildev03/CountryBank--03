@@ -1,7 +1,8 @@
 version: '2'
 services:
-  cb:
+  countrybank:
     image: nikitap/countrybank
+    container_name: countrybank
     ports:
       - "8000:8000"
     environment:
@@ -11,8 +12,3 @@ services:
         export CONFIG_MAIL_STARTTLS="true"
         export CONFIG_MAIL_USERNAME="kinnerasunildev@gmail.com"
         export CONFIG_MAIL_PASSWORD="KINNERA03#"
-
-    logging:
-        options:
-          max-size: "20m"
-          max-file: "10"
