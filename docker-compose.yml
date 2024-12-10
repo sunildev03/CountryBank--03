@@ -1,19 +1,18 @@
-
 version: "2"
 services:
   countrybank:
     image: nikitap/countrybank
     container_name: countrybank
     ports:
-      - 8000:8000
-    environment: 
-      CONFIG_MAIL_HOST="smtp.gmail.com"
-      CONFIG_MAIL_PORT="587" 
-      CONFIG_MAIL_SMTP_AUTH="true" 
-      CONFIG_MAIL_STARTTLS="true"
-      CONFIG_MAIL_USERNAME="kinnerasunildev@gmail.com" 
-      CONFIG_MAIL_PASSWORD="KINNERA03#"
+      - "8000:8000"
+    environment:
+      - CONFIG_MAIL_HOST=smtp.gmail.com
+      - CONFIG_MAIL_PORT=587
+      - CONFIG_MAIL_SMTP_AUTH=true
+      - CONFIG_MAIL_STARTTLS=true
+      - CONFIG_MAIL_USERNAME=kinnerasunildev@gmail.com
+      - CONFIG_MAIL_PASSWORD=KINNERA03#
     logging:
       options:
-        max-size: 20m
+        max-size: "20m"
         max-file: "10"
