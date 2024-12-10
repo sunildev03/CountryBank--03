@@ -1,14 +1,17 @@
-version: '2'
+
+version: "2"
 services:
   countrybank:
     image: nikitap/countrybank
     container_name: countrybank
     ports:
-      - "8000:8000"
-    environment:
-        export CONFIG_MAIL_HOST="smpt.gmail.com"
-        export CONFIG_MAIL_PORT="587"        # Example: 587 for TLS, 465 for SSL
-        export CONFIG_MAIL_SMTP_AUTH="true"
-        export CONFIG_MAIL_STARTTLS="true"
-        export CONFIG_MAIL_USERNAME="kinnerasunildev@gmail.com"
-        export CONFIG_MAIL_PASSWORD="KINNERA03#"
+      - 8000:8000
+    environment: export CONFIG_MAIL_HOST="smpt.gmail.com" export
+      CONFIG_MAIL_PORT="587" export CONFIG_MAIL_SMTP_AUTH="true" export
+      CONFIG_MAIL_STARTTLS="true" export
+      CONFIG_MAIL_USERNAME="kinnerasunildev@gmail.com" export
+      CONFIG_MAIL_PASSWORD="KINNERA03#"
+    logging:
+      options:
+        max-size: 20m
+        max-file: "10"
