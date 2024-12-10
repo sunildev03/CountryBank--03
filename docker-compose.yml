@@ -5,7 +5,7 @@ services:
     ports:
       - "8000:8000"
     environment:
-        export CONFIG_MAIL_HOST="your.mailserver.com"
+        export CONFIG_MAIL_HOST="smpt.gmail.com"
         export CONFIG_MAIL_PORT="587"        # Example: 587 for TLS, 465 for SSL
         export CONFIG_MAIL_SMTP_AUTH="true"
         export CONFIG_MAIL_STARTTLS="true"
